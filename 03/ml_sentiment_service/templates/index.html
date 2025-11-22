@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semantic Sentiment — Demo</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Семантический анализ тональности</h1>
+    <form method="post" action="/classify">
+      <label for="text">Введите текст:</label><br>
+      <textarea id="text" name="text" rows="6" placeholder="Введите отзыв..."></textarea><br>
+      <button type="submit">Отправить</button>
+    </form>
+    <p class="hint">JSON-эндпоинт: <code>POST /predict</code> (Basic Auth).</p>
+  </main>
+</body>
+</html>
